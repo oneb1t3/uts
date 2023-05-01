@@ -1,8 +1,0 @@
-# Installing phpmyadmin
-FROM phpmyadmin:latest
-
-# Set env
-ENV PMA_HOST 172.18.0.3
-ENV MSQL_ROOT_PASSWORD pwd123
-EXPOSE 80
-EXPOSE 8080
