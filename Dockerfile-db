@@ -1,8 +1,0 @@
-# Installing mysql
-FROM mysql:latest AS mysql_image
-
-# Copy sql file to be executed on startup
-COPY redlock-db.sql /docker-entrypoint-initdb.d/redlock-db.sql
-
-# Set up database environment variables
-ENV MYSQL_ROOT_PASSWORD pwd123
